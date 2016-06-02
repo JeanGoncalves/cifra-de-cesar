@@ -8,7 +8,7 @@ A cifra de César também conhecida como `cifra de troca`, `código de César` o
 Eu estarei utilizando desta técnica de criptografia para aprimorar meu conhecimento sobre TDD ([Jasmine](http://jasmine.github.io/)) e Automatizador de tarefas ([GULP](http://gulpjs.com/)), e para ficar mais divertida a _brincadeira_, estarei fazendo uma personalização na função de criptografia e descriptografia, podendo ser gerado uma criptografia com a alteração da substituição. 
 
 Para a Cifra de César, é fixo em três a quantidade de casas no alfabeto a ser trocado. 
-Ex.: A letra **C** será substituida pella letra **F**.
+Ex.: A letra **C** será substituida pela letra **F**.
 
 Nessa função personalizada, **será fornecido** a quantidade de casas a serem puladas e este número será gravado no **fim da criptografia gerada**. Então na função de descriptografia, terá de **pegar esse número** para realizar a **descriptografia correta**.
 
