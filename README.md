@@ -14,16 +14,25 @@ Nessa função personalizada, **será fornecido** a quantidade de casas a serem 
 
 # Utilização
 
+
+```html
+<script type="text/javascript" src="lib/dist/cifraCesarPersonalized.min.js"></script>
+```
+
+```js
+var crpCsar = new CrpCsar();
+```
+
 Criptografia da mensagem:
 
 ```js
 var msg = 'CASA AZUL';
-var crp = crpCsar(msg, 4); // GEWE EDYP4
+var crp = crpCsar.cript(msg, 4); // GEWE EDYP4
 ```
 
 Descriptografia da mensagem:
 
 ```js
 var msg = 'GEWE EDYP4';
-var dcrp = dcrpCsar(msg); // CASA AZUL
+var dcrp = crpCsar.decript(msg); // CASA AZUL
 ```
