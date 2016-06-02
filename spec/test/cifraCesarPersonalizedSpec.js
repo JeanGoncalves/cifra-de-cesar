@@ -10,4 +10,8 @@ describe("cifraCesar", function() {
 	it("retornar NULL quando não enviar parâmetro", function() {
 		expect(crpCsar.cript()).toEqual(null);
 	});
+
+	it('quando enviar letra A no primeiro parâmentro, retornar D', function() {
+		expect(crpCsar.cript('A')).toEqual('D');
+	});
 });
