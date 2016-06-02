@@ -7,25 +7,20 @@ describe("cifraCesar", function() {
 		crpCsar = new CrpCsar();
 	});
 
-	describe('Criptografia com um parâmetro', function() {
-		it("retornar NULL quando não enviar parâmetro", function() {
+	describe('Criptografia', function() {
+		it("verificando consistẽncia da funçao", function() {
 			expect(crpCsar.cript()).toEqual(null);
 		});
 
-		it('quando enviar letra "A" no primeiro parâmentro, retornar "D"', function() {
+		it("validações para gerar criptografia enviando apenas a String", function() {
 			expect(crpCsar.cript('A')).toEqual('D');
-		});
-
-		it('quando enviar letra "B" no primeiro parâmentro, retornar "E"', function() {
 			expect(crpCsar.cript('B')).toEqual('E');
+			expect(crpCsar.cript('CASA')).toEqual('FDVD');
+			expect(crpCsar.cript('CASA azul')).toEqual('FDVD dcxo');
 		});
 
-		it('quando enviar a palavra "CASA" no primeiro parâmentro, retornar "FDVD"', function() {
-			expect(crpCsar.cript('CASA')).toEqual('FDVD');
-		});
-
-		it('quando enviar a frase "CASA azul" no primeiro parâmentro, retornar "FDVD dcxo"', function() {
-			expect(crpCsar.cript('CASA')).toEqual('FDVD');
+		it("validações para gerar criptografia enviando String e Int", function() {
+			expect(crpCsar.cript('A', 4)).toEqual('E');
 		});
 	});
 
