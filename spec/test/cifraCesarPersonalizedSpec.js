@@ -21,6 +21,7 @@ describe("cifraCesar", function() {
 
 		it("validações para gerar criptografia enviando String e Int", function() {
 			expect(crpCsar.cript('A', 4)).toEqual('E');
+			expect(crpCsar.cript('CASA', 10)).toEqual('MKCK');
 		});
 	});
 
