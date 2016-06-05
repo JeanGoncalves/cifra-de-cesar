@@ -8,7 +8,7 @@ describe("cifraCesar", function() {
 	});
 
 	describe('Criptografia', function() {
-		it("verificando consistẽncia da funçao", function() {
+		it("verificando consistência da função crpCsar.cript()", function() {
 			expect(crpCsar.cript()).toEqual(null);
 		});
 
@@ -25,4 +25,9 @@ describe("cifraCesar", function() {
 		});
 	});
 
+	describe('Descriptografia', function() {
+		it('verificando consistência da função crpCsar.decript()', function() {
+			expect(crpCsar.decript()).toEqual(null);
+		});
+	});
 });

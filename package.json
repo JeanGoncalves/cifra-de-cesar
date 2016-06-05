@@ -8,5 +8,33 @@
     "gulp-shell": "^0.5.2",
     "gulp-uglify": "^1.5.3",
     "jshint": "^2.9.2"
-  }
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-jasmine": "^2.3.0",
+    "gulp-jshint": "^2.0.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.2",
+    "gulp-uglify": "^1.5.3",
+    "gulp-update": "0.0.2",
+    "jshint": "^2.9.2"
+  },
+  "name": "cifra-de-cesar",
+  "description": "A cifra de César também conhecida como `cifra de troca`, `código de César` ou `troca de César` é uma das mais simples técnicas de `criptografia`. É um tipo de *cifra de substituição* na qual cada letra do texto é substituida por outra, que se apresenta no *alfabeto* abaixo dela um número fixo de vezes.  - _Fonte: [Wikipédia](https://pt.wikipedia.org/wiki/Cifra_de_C%C3%A9sar)_",
+  "version": "1.0.0",
+  "main": "Gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeanGoncalves/cifra-de-cesar.git"
+  },
+  "author": "Jean Gonçalves",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeanGoncalves/cifra-de-cesar/issues"
+  },
+  "homepage": "https://github.com/JeanGoncalves/cifra-de-cesar#readme"
 }
